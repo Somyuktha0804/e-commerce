@@ -1,0 +1,39 @@
+<div class="back"><br><br>
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <p style="color: red" id="h3" ></p>
+        <form [formGroup]="registrationform" (ngSubmit)="registerUser()">
+            <label>User Name</label>
+            <input formControlName="username" type="text" placeholder="User Name" id="uname" required><br>
+            <!-- <small [class.d-none]="userName.valid ||
+                                    userName.untouched" class="text-danger">Username is srequired</small>
+             -->
+
+             <div *ngIf="userName.invalid && userName.touched">
+                 <small *ngIf="userName.errors?.required" class="text-danger">Username is required</small>
+                 <small *ngIf="userName.errors?.minlength" class="text-danger">Username must have atleast 5 characters</small>
+             </div>
+            <label>Email-id</label>
+            <input formControlName="email"  type="email" placeholder="Email-Id" id="email" required email><br>
+            <div *ngIf="email.invalid && email.touched">
+                <small *ngIf="email.errors?.required" class="text-danger">Email-Id is required</small>
+                <small *ngIf="email.errors?.email" class="text-danger">Email-Id is invalid</small>
+            </div>
+            <label>Password</label>
+            <input formControlName="password"  type="password" placeholder="Password" id="password" required><br>
+            <div *ngIf="password.invalid && password.touched">
+                <small *ngIf="password.errors?.required" class="text-danger">Password is required</small>
+            </div>
+
+            <label>Confirm Password</label>
+            <input formControlName = "confirmpassword"  type="password" placeholder="Confirm Password" id="confirmpassword" required>
+            <small *ngIf="registrationform.errors?.misMatch" class="text-danger">Passwords are not same.</small>
+            
+            
+            <br><br>
+            <button type="submit" class="button" [disabled]="!registrationform.valid">Submit</button>
+            <p class="para-2">Already have an account? <a routerLink="/login">LogIn Here</a></p>
+            <p id="navigate"> To navigate to home page<a routerLink="/homepage">Click Here</a></p>
+        </form>
+    </div>
+</div>

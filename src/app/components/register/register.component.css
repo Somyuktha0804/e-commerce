@@ -1,0 +1,87 @@
+body{
+    /* background-image: url("src/assets/images/New Arrivals/new arr1.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+     /* background: linear-gradient(45deg, #a700ff, #4d19db, white);  */
+}
+.signup-box{ 
+    
+    width: 360px;
+    height: auto;
+    margin: auto;
+    background:rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border-color: grey;
+    /* margin-top: 40px; */
+}
+h1{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15px;
+} 
+form{
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 10px;
+}  
+form label{
+    color: #ffffff;
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}    
+form input{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    outline: none;
+    color: gray;
+} 
+.button{
+    width: 300px;
+    height: 35px;
+    /* margin-top: 40px; */
+    border: none;
+    background-color: #1ab188;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.button:disabled {
+    width: 300px;
+    height: 35px;
+    /* margin-top: 40px; */
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-size: 18px;
+}
+p{
+    text-align: center;
+    padding-top: 1%;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+p a{
+        color: cornflowerblue;
+    } 
+p a:hover{
+        color: blue;
+    }  
+    
+#navigate {
+        text-align: center;
+        padding-top: 1%;
+        font-size: 14px;
+        color: #ffffff; 
+    }
+
+#navigate a{
+        color: cornflowerblue;
+    }
+#navigate a:hover{
+        color: blue;
+    } 
