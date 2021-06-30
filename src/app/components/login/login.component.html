@@ -1,0 +1,26 @@
+<div class="back">
+<div class="login-box">
+    <h1>Log In</h1>
+    <form [formGroup]="loginform" (ngSubmit)="login()">
+        <label>User Name</label>
+        <input formControlName="username" type="text" placeholder="User Name" name="email" required><br>
+        <div *ngIf="userName.invalid && userName.touched">
+            <small *ngIf="userName.errors?.required" class="text-danger">Username is required</small>
+            <small *ngIf="userName.errors?.minlength" class="text-danger">Username must have atleast 5 characters</small>
+        </div>
+
+        <label>Password</label>
+        <input formControlName="password" type="password" placeholder="Password" name="password" required>
+        <div *ngIf="password.invalid && password.touched">
+                <small *ngIf="password.errors?.required" class="text-danger">Password is required</small>
+        </div>
+         
+        
+        <button type="submit" value="Submit" class="button" [disabled]="!loginform.valid">
+           Log In</button>
+        
+        <p>Not have an account? <a routerLink="/register">Sign Up Here</a></p>
+        <p id="navigate"> To navigate to home page<a routerLink="/homepage">Click Here</a></p>
+    </form>
+</div>
+</div>
