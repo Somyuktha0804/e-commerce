@@ -1,0 +1,88 @@
+span{
+    font-size: 4rem;
+    padding:1rem 4rem;
+    color:#fff;
+    background: green;
+    border-top-right-radius: 3rem;
+    display: inline-block;
+}
+.arrival{
+    min-height: 100vh;
+}
+
+.arrival .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    width: 85%;
+    margin:0 auto;
+}
+
+.arrival .box-container .box{
+    flex:1 1 20rem;
+    border:.1rem solid rgba(0,0,0,.3);
+    overflow: hidden;
+    position: relative;
+    margin:1rem 2rem;
+}
+
+.arrival .box-container .box .image{
+    height: 20rem;
+    padding:1rem;
+    text-align: center;
+    background:#f0f0f0;
+}
+
+.arrival .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.arrival .box-container .box .info h3{
+    padding:1rem;
+    font-size: 25px;
+    color:var(--blue);
+}
+
+.arrival .box-container .box .info .subInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    border-top: .1rem solid rgba(0,0,0,.3);
+}
+
+.arrival .box-container .box .info .subInfo .price{
+    color:#ff3300;
+    font-size: 2rem;
+}
+
+.arrival .box-container .box .overlay{
+
+    position: absolute;
+    top:0; left: 0;
+    height:20rem;
+    width: 100%;
+    background:rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    
+}
+
+.arrival .box-container .box .overlay p {
+
+    color: white;
+    font-style: bold;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 50px;
+    opacity: 10;
+}
+
+.arrival .box-container .box:hover .overlay{
+    transform: scale(1);
+}

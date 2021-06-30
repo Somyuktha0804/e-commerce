@@ -1,0 +1,29 @@
+ <!--Arrival section starts-->
+ <div class="arrival" id="arrival">
+
+    <h1 class="heading"> <span>new arrivals</span> </h1><hr>
+    
+    <div class="box-container">
+    
+        <div class="box" *ngFor="let arrival of newArrivals; index as i">
+            <div class="image">
+                <img [src]="arrival.arrImg" alt="">
+            </div>
+            <div class="info">
+                <h3>{{arrival.name}} </h3>
+                <div class="subInfo">
+                    <strong class="price"> 
+                        ₹{{arrival.price}}/- 
+                    </strong>
+                </div>
+            </div>
+            <div class="overlay">
+                <p>{{arrival.description}}</p>
+            </div>
+        </div>
+
+    </div>
+  </div>   
+
+  <!--Arrival section ends-->
+
