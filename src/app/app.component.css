@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s cubic-bezier(.37,1.14,.26,1.24);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+span{
+    font-size: 4rem;
+    padding:1rem 6rem;
+    color:#fff;
+    background: green;
+    border-top-right-radius: 3rem;
+    display: inline-block;
+}
+
+.header-1, .header-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-1{
+    background-color: rgb(235, 235, 183);
+}
+
+.header-1 .logo{
+    font-size: 3rem;
+    color:#666;
+}
+
+.header-1 .ll{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.header-1 .ll li{
+    padding-top: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+#main{
+    font-family: Bahnschrift SemiBold ;
+    font-size: 3rem;
+}
+
+#slogan{
+    font-size: 1rem;
+}
+
+
+.header-1 .form-container form{
+    display: flex;
+}
+
+.header-1 .form-container form #search{
+    height: 3rem;
+    width: 30rem;
+    border:.2rem solid #666;
+    font-size: 1.5rem;
+    padding:0 1rem;
+}
+
+.header-1 .form-container form #search:focus{
+    border-color: var(--blue);
+}
+
+.header-1 .form-container form label{
+    height: 3rem;
+    width: 4rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 23px;
+    cursor: pointer;
+    background: green;
+    color:#fff;
+}
+
+.header-1 .form-container form label:hover{
+    color:yellow;
+}
+
+.header-2{
+    background: green;
+    height: 60px;
+}
+.header-2 .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-2 .navbar ul li{
+    margin:0 1rem;
+}
+.header-2 .navbar ul li a{
+    font-size: 25px;
+    color:#fff;
+}
+.header-2 .navbar ul li a:hover {
+    color: yellow;
+}
+
+/* .header-2 .navbar .submenu {
+    display: none;
+    
+}
+
+.header-2 .navbar ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    background: green;
+    margin-left: -15px;
+}
+
+.header-2 .navbar ul li:hover .submenu ul {
+    display: block;
+    margin: 10px;
+    
+}
+
+.header-2 .navbar ul li:hover .submenu ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+}
+.header-2 .navbar ul li:hover .submenu ul li a{
+    font-size: 20px;
+}
+.header-2 .navbar ul li:hover .submenu ul li a:hover {
+    color: yellow;
+    
+} */
+
+
+.header-2 .icons a{   
+    margin-top: 20px;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 0 1rem;
+}
+.header-2 .icons a:hover{
+    color:yellow;
+}
+.header-2 #menu{
+    font-size: 2rem;
+    color:#fff;
+    cursor: pointer;
+    display: none;
+}
+.header-2 .header-active{
+    position: fixed;
+    top:0; left: 0;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+
+
+
+
+
+

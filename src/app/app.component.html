@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <!--Header section starts-->
+        
+    <div class="header-1">
+      <a href="#" class="logo">
+          <ul class="ll"><li><img [src]="logo"></li></ul>
+              <ul class="ll"><li id="main">Nature Maya</li>
+              <li id="slogan">A few clicks is all it takes.</li></ul>  </a>
+      
+      <div class="form-container">
+          <form>
+              <input type="text" placeholder="Search products" id="search"/>
+              <label for="search" class="fas fa-search" [style.height.rem]=3></label>
+          </form>
+      </div>
+  </div>
+
+  <div class="header-2">
+
+      <div id="menu"></div>
+
+      <nav class="navbar">
+          <ul>
+              <li><a routerLink="/homepage">home</a></li>
+              <li><a>arrival</a></li>
+              <li><a routerLink="/shopping-cart">gallery</a></li>
+              
+          </ul>
+      </nav>
+  
+      <div class="icons">
+          <a href="#" class="fas fa-heart" [style.height.rem]=3></a>
+          <a routerLink="/cart" routerLinkActive="active" class="fas fa-shopping-cart" [style.height.rem]=3></a>
+          <a routerLink="/login" class="fas fa-user" [style.height.rem]=3></a>
+      </div>
+  </div> 
+  <!--Header section ends-->
+  
+<router-outlet>
+</router-outlet>
+  </body>
+</html>
