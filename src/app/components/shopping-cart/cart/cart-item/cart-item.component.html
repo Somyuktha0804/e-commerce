@@ -1,0 +1,7 @@
+<div class="cart-item">
+    <span>{{cartItem.name}}</span> x 
+    <span>{{cartItem.qty}}</span>: 
+    <strong>{{cartItem.qty * cartItem.price | currency: 'INR'}}</strong>
+    <button (click)=removeProd(cartItem) class="btn" id="x" >X</button>
+</div>
+
